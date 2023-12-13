@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-size: 30px;
+    background-color: #fa9884;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.logo {
+    background-image: url("Images/LOGO.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav {
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    text-decoration: underline;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-media img {
+    width: 66px;
+    height: 66px;
+}
+
+.background-image {
+    height: 686px;
+    background-image: url("Images/pasta-1181189_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff3e2;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.content-section {
+    background-color: #e74646;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    max-width: 800px;
+}
+
+.section-content h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.section-content p {
+    font-size: 25px;
+}
+
+.reservation-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.second-section {
+    height: auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.second-section p {
+    font-size: 30px;
+}
+
+.learn-more {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.image-section {
+    width: 1366px;
+    height: 667px;
+    
+}
+.full-width-image {
+width: 100%;
+height: 667px;
+background-image: url("Images/cake-1971552_1280.jpg");
+background-size: cover;
+background-position: top center;
+}
+.second-section {
+    background-color: #fff3e2;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: auto; 
+}
+
+.text-content {
+   color: #000;
+    max-width: 554px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bread1 {
+    max-width: 554px;
+}
+
+.bread1 img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text-content,
+    .bread1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.second-section {
+    background-color: #fff3e2;
+    display: flex;
+    justify-content: center;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.coffee-image {
+    width: 554px;
+    height: 593px;
+    margin-right: 20px;
+}
+
+.text-content {
+    width: 554px;
+}
+
+.text-content .section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-content p {
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 769px) {
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .coffee-image {
+        width: 100%; 
+        height: auto; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .text-content {
+        width: 100%; 
+    }
+}
+.newsletter-section {
+    position: relative;
+}
+
+.overlay-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-image {
+    width: 100%;
+    height: auto;
+}
+
+.newsletter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.newsletter-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.newsletter-overlay p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.email-input,
+.sign-up-button {
+    background: #171717;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+.email-input input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/*Styling desktop*/
+@media screen and (min-width: 769px) {
+    .form-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-input,
+    .sign-up-button {
+        margin:  10px;
+    }
+}
+
+@media screen and (max-width:648px) {
+nav {
+    display: none;
+}  
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+/* Mobile Navigation Styles */
+.mobile-menu {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #fa9884;
+    text-align: center;
+}
+
+.mobile-nav-list li {
+    padding: 15px;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-nav-list {
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
